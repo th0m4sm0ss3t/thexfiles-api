@@ -1,25 +1,8 @@
-# thexfiles
+# The x files
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# thexfiles-api
+## What is used
+  - [TV Maze API](https://www.tvmaze.com/api)
+  - VueJs
+  - Vue Router
+  - SCSS
+  - [Kinesis](https://aminerman.com/kinesis/#/)
