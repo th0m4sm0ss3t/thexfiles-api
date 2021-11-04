@@ -1,30 +1,43 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">About</router-link> |
+    <router-link to="/cast">Cast</router-link> |
+    <router-link to="/episodes">Episodes</router-link> |
+    <router-link to="/gallery">Gallery</router-link> |
   </div>
-  <router-view />
+  <router-view :key="$route.fullPath" />
 </template>
 
 <style lang="scss">
+@import "@/assets/scss/vars.scss";
+
+html {
+  background: $dark;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: $font;
+  background: $dark;
+  color: $light;
+  min-height: 100vh;
 }
 
 #nav {
-  padding: 30px;
+  padding: 2rem;
+  font-family: $titleFont;
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: $light;
+    text-decoration: none;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: $color;
     }
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }
 </style>
